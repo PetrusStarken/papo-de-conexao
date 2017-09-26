@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript">
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+
+        var map = new google.maps.Map(mapDiv, {
+            center: new google.maps.LatLng(-27.591945, -48.531545),
+            zoom: 14
+        });
+
+
+        var pontoMercado = new google.maps.LatLng(-27.591945, -48.531545);
+        marker = new google.maps.Marker ({
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: pontoMercado,
+            map:map,
+            //icon: image,
+            label: 'local do evento',
+            title: 'local do evento'
+        });
+
+        marker.setMap(map);
+      }
+    </script>
+
+    <script sync defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGqidYhxsDPGcugGik_wuBwiE5_vOSHy4&callback=initMap">
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +40,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        #map {
+        width: 100%;
+        height: 300px;
+        background-color: grey;
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
@@ -20,7 +57,7 @@
                 <!-- logo -->
                 <div class="site-branding">
                     <a class="logo" href="#">
-                        
+
                         <!-- logo image  -->
                         <!-- <img src="assets/images/logo.png" alt="Logo"> CRIAR LOGO? -->
 
@@ -41,27 +78,27 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!-- navigation menu -->
-                    <li><a data-scroll href="#about">Quem somos</a></li> 
-                    <li><a data-scroll href="#speakers">Facilitadores</a></li>              
-                    <li><a data-scroll href="#schedule">Agenda</a></li>                  
-                    <li><a data-scroll href="#location">Local</a></li>                  
-                
+                    <li><a data-scroll href="#about">Quem somos</a></li>
+                    <li><a data-scroll href="#speakers">Facilitadores</a></li>
+                    <li><a data-scroll href="#schedule">Agenda</a></li>
+                    <li><a data-scroll href="#location">Local</a></li>
+
                 </ul>
             </div>
         </div><!-- /.container -->
     </nav>
 
-    <header id="site-header" class="site-header valign-center"> 
+    <header id="site-header" class="site-header valign-center">
         <div class="intro">
 
             <h2>27 de setembro / O Sítio Coworking</h2>
-            
+
             <h1>Como usar a tecnologia para otimizar seu negócio</h1>
-            
+
             <p>Primeira edição</p>
-            
+
             <a class="btn btn-white" href="http://bit.ly/papo-de-conexao" target="_blank">Garanta já sua vaga</a>
-        
+
         </div>
     </header>
 
@@ -92,7 +129,7 @@
                         <li>Have dedicated 2-to-1 meetings with the experts</li>
                         <li>Reach more consumers for less by learning new digital media skills</li>
                         <li>Save money when spending in online advertising</li>
-                    
+
                     </ul>
 
                 </div><!-- /.col-sm-6 -->
@@ -107,25 +144,25 @@
 
                     <i class="ion-ios-calendar"></i>
                     <h3>2017<br>27 de setembro</h3>
-                
+
                 </div>
                 <div class="col-sm-3">
 
                     <i class="ion-ios-location"></i>
                     <h3>Florianópolis<br>Santa Catarina</h3>
-                
+
                 </div>
                 <div class="col-sm-3">
 
                     <i class="ion-pricetags"></i>
                     <h3>50<br>Vagas</h3>
-                
+
                 </div>
                 <div class="col-sm-3">
-                
+
                     <i class="ion-speakerphone"></i>
                     <h3>03<br>Palestrantes</h3>
-                
+
                 </div>
             </div><!-- row -->
         </div><!-- container -->
@@ -137,7 +174,7 @@
                 <div class="col-md-12">
 
                     <h3 class="section-title">Palestrantes</h3>
-                
+
                 </div>
             </div>
 
@@ -212,7 +249,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-uppercase mt0 font-400">Participe conosco</h3>
-                    
+
                     <p>Faça sua inscrição e participe desse grande evento.</p>
 
                     <a class="btn btn-white" href="http://bit.ly/papo-de-conexao" target="_blank">Garanta já sua vaga</a>
@@ -269,7 +306,8 @@
                     </address>
                 </div>
                 <div class="col-sm-9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.50013548559!2d-78.9870674333782!3d40.76030630398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sbd!4v1436299406518" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.50013548559!2d-78.9870674333782!3d40.76030630398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sbd!4v1436299406518" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
