@@ -1,34 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript">
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-
-        var map = new google.maps.Map(mapDiv, {
-            center: new google.maps.LatLng(-27.591945, -48.531545),
-            zoom: 14
-        });
-
-
-        var marker1 = new google.maps.LatLng(-27.591945, -48.531545);
-        marker = new google.maps.Marker ({
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            position: marker1,
-            map:map,
-            //icon: image,
-            label: 'local do evento',
-            title: 'local do evento'
-        });
-
-        marker.setMap(map);
-      }
-    </script>
-
-    <script sync defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGqidYhxsDPGcugGik_wuBwiE5_vOSHy4&callback=initMap">
-    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,9 +51,7 @@
 
                     <!-- navigation menu -->
                     <li><a data-scroll href="#about">Quem somos</a></li>
-                    <li><a data-scroll href="#speakers">Facilitadores</a></li>
-                    <li><a data-scroll href="#schedule">Agenda</a></li>
-                    <li><a data-scroll href="#location">Local</a></li>
+                    <li><a data-scroll href="#nextEvent">Próximo evento</a></li>
 
                 </ul>
             </div>
@@ -107,28 +77,29 @@
             <div class="row">
                 <div class="col-sm-6">
 
-                    <h3 class="section-title">About Us</h3>
+                    <h3 class="section-title">Quem somos?</h3>
 
-                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
-
+                    <p>Uma iniciativa disposta a disseminar o conhecimento e promover o networking entre profisisonais e empreendedores de diversas áreas.</p>
+                    
                     <figure>
-                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                        <img alt="" class="img-responsive" src="images/about-us.jpg">
                     </figure>
 
                 </div><!-- /.col-sm-6 -->
 
                 <div class="col-sm-6">
 
-                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
+                    <h3 class="section-title multiple-title">O que é o Papo de Conexão?</h3>
 
-                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
+                    <p>Um evento para propagar nossos ideais a pessoas interessadas em evoluir seu negócio e ampliar sua rede de contatos.</p>
+
+                    <h4 class="section-title">Nossos objetivos</h4>
 
                     <ul class="list-arrow-right">
 
-                        <li>Learn from the best Asian Social Media Experts &amp; Case Studies</li>
-                        <li>Have dedicated 2-to-1 meetings with the experts</li>
-                        <li>Reach more consumers for less by learning new digital media skills</li>
-                        <li>Save money when spending in online advertising</li>
+                        <li>Promover o networking local</li>
+                        <li>Trazer conteúdo de qualidade para otimizar seu negócio</li>
+                        <li>Unir pessoas com interesses em comum</li>
 
                     </ul>
 
@@ -137,9 +108,12 @@
         </div><!-- /.container -->
     </section>
 
-    <section id="facts" class="section bg-image-1 facts text-center">
+    <section id="nextEvent" class="section bg-image-1 facts text-center">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                        <h3 class="section-title">Nosso próximo evento</h3>
+                </div>
                 <div class="col-sm-3">
 
                     <i class="ion-ios-calendar"></i>
@@ -188,7 +162,7 @@
 
                         <h4>Diego Motta</h4>
 
-                        <p>Catarinas Design</p>
+                        <p><a href="http://catarinasdesign.com.br/" target="_blank">Catarinas Design</a></p>
 
                         <ul class="social-block">
                             <li><a href="https://www.facebook.com/diegoluizmotta" target="_blank"><i class="ion-social-facebook"></i></a></li>
@@ -208,7 +182,7 @@
 
                         <h4>Gika Voigt</h4>
 
-                        <p>Praça da Terra</p>
+                        <p><a href="https://www.facebook.com/pracadaterra/" target="_blank">Praça da Terra</a></p>
 
                         <ul class="social-block">
                             <li><a href="https://www.facebook.com/gikavoigt?ref=br_rs" target="_blank"><i class="ion-social-facebook"></i></a></li>
@@ -230,12 +204,11 @@
 
                         <p>Tecnologia</p>
 
-                        <!-- <ul class="social-block">
-                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <ul class="social-block">
                             <li><a href=""><i class="ion-social-facebook"></i></a></li>
                             <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
                             <li><a href=""><i class="ion-social-googleplus"></i></a></li>
-                        </ul> -->
+                        </ul>
 
                     </div><!-- /.speaker -->
                 </div><!-- /.col-md-4 -->
@@ -300,14 +273,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h3 class="section-title">Event Location</h3>
+                    <h3 class="section-title">Local do evento</h3>
                     <address>
-                        <p>Eardenia<br> The Grand Hall<br> House # 08, Road #52, Street<br> Phone: +1159t3764<br> Email: example@mail.com</p>
+                        <p><b>O Sítio Coworking</b><br /> Lagoa da Conceição<br /> Florianópolis - Brasil</p>
+                        <p>Arte, educação, entretenimento, informação, opinião, reflexão.</p>
                     </address>
                 </div>
                 <div class="col-sm-9">
-                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.50013548559!2d-78.9870674333782!3d40.76030630398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sbd!4v1436299406518" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-                    <div id="map"></div>
+                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDmez-OToKYryf66wdiHa8atvD6a5OmnqE&q=O+Sitio,Florianopolis+BR" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -317,13 +290,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="site-info">Designed and <br> Developed by <a href="#">US</a></p>
-                    <ul class="social-block">
-                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
-                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
-                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
-                    </ul>
+                    <p class="site-info">Desenvolvido por <br /><a href="https://www.linkedin.com/in/pcamarajr/" target="_blank">Pedro Camara</a> e <a href="https://www.linkedin.com/in/kendy-hayashi-030339147/" target="_blank">Kendy Hayashi</a></p>
                 </div>
             </div>
         </div>
@@ -332,7 +299,8 @@
     <!-- script -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.0.0/js/buoy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.0.0/js/smooth-scroll.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
