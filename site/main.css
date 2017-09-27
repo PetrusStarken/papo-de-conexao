@@ -110,6 +110,14 @@ ul li {
           transform: scale(0.9);
 }
 
+.btn-destaque {
+  padding: 20px 10px 20px 20px;
+  font-weight: bold;
+  font-size: 27px;
+  background-color: #E6A740;
+  color: white;
+}
+
 .form-control {
   border-radius: 0;
   box-shadow: none;
