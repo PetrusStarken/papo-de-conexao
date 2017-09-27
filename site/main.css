@@ -507,6 +507,9 @@ ul li {
 .partner .partner-box-cool2work {
   background: url(images/logo-cool2work.png) no-repeat center center/contain;
 }
+.partner .partner-box-beerOrcoffee {
+  background: url(images/logo-beerOrcoffee.png) no-repeat center center/contain;
+}
 
 .partner .section-title {
   color: white;
