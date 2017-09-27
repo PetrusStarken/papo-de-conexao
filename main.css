@@ -370,6 +370,21 @@ ul li {
   font-weight: 300;
 }
 
+@media (max-width: 767px) {
+  
+  .site-header .intro h2 {
+    font-size: 24px;
+  }
+
+  .site-header .intro h1 {
+    font-size: 30px;
+  }
+
+  .site-header .intro p {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
